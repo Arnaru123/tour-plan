@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container">
         <div class="header-intro">
           <img
@@ -19,13 +19,13 @@
             alt="Best Tour Plan logo"
             class="header-intro__logo"
           />
-          <form action="#" class="search">
+          <form action="#" class="search header__search">
             <input
               type="text"
               class="search__input"
               placeholder="Search Location"
             />
-            <button class="search_button">
+            <button class="search__button">
               <img
                 src="img/search-icon.svg"
                 alt="search button"
@@ -33,14 +33,14 @@
               />
             </button>
           </form>
-          <div class="user">
+          <a href="#" class="user">
             <img
               src="img/login-avatar.jpg"
               alt="User avatar"
               class="user__avatar"
             />
-            <a href="#" class="user__name">Nathan</a>
-          </div>
+            <span href="#" class="user__name">Nathan</span>
+          </a>
           <!-- /.user -->
         </div>
         <!-- /.header-intro -->
