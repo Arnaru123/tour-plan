@@ -10,7 +10,7 @@
     &-top
       padding: 30px 0
       &__logo
-        width: 132px
+        width: 132px      
     &-bottom
       padding: 22px 0
   .search
@@ -20,3 +20,26 @@
   .container
     width: 673px
     width: 92%
+  .navbar
+    &-bottom, &__search, &__user
+      display: none       
+  .menu
+    &-button
+      display: flex
+      width: 16px
+      height: 11px
+      align-items: center
+      justify-content: space-between
+      flex-direction: column
+      border: none
+      cursor: pointer
+      &__line
+        width: 16px
+        height: 1px
+        background-color: $text-color
+@media (max-width: 576px)
+  .navbar   
+    &-top
+      padding: 28px 0      
+      &__logo
+        width: 99px
