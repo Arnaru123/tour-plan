@@ -1,9 +1,15 @@
 .hotel
-  padding: 23px 0 70px 0
+  padding: 14px 0 70px 0
+  &-stars        
+    &__star
+      width: 6px
+      height: 6px
+      &:not(:last-child)
+        margin-right: 2px
   &-info
     display: flex
     align-items: center
-    justify-content: space-between
+    justify-content: space-between  
     &__offer
       margin-left: 14px
       margin-top: 4px
