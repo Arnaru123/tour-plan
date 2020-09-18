@@ -3,26 +3,43 @@
     max-width: 960px
 @media (max-width: 992px)
   .container
-    max-width: 760px
-  .navbar          
-    &__search
-      margin-left: auto
-    &-top
-      padding: 30px 0
-      &__logo
-        width: 132px      
-    &-bottom
-      padding: 22px 0
-  .search
-    &__input
-      width: 340px
+    max-width: 760px    
 @media (max-width: 768px)
   .container
     width: 673px
     width: 92%
   .navbar
+    &-top
+      padding: 30px 0
+      &__logo
+        width: 132px
+    &__search
+      margin-left: auto
+    &-bottom
+      padding: 22px 0    
+    &-menu
+      &__link
+        font-size: 12px
+        line-height: 15px
+  .search
+    &__input
+      width: 340px
+@media (max-width: 650px)
+  .user
+    &__name
+      display: none
+  .navbar-menu
+    &__link
+      font-weight: 400
+      font-size: 10px  
+@media (max-width: 576px)
+  .navbar   
+    &-top
+      padding: 28px 0      
+      &__logo
+        width: 99px
     &-bottom, &__search, &__user
-      display: none       
+      display: none
   .menu
     &-button
       display: flex
@@ -33,6 +50,7 @@
       flex-direction: column
       border: none
       cursor: pointer
+      background-color: $light
       &__line
         width: 16px
         height: 1px
@@ -54,10 +72,3 @@
       &__offer
         margin-left: 0
         order: -1
-
-@media (max-width: 576px)
-  .navbar   
-    &-top
-      padding: 28px 0      
-      &__logo
-        width: 99px
