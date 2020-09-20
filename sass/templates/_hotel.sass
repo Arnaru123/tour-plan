@@ -1,11 +1,13 @@
 .hotel
-  padding: 14px 0 70px 0
-  &-stars        
-    &__star
-      width: 6px
-      height: 6px
+  padding: 24px 0 20px 0
+  &-stars
+    display: flex
+    align-items: center        
+    &__icon
+      width: 8px
+      height: 8px
       &:not(:last-child)
-        margin-right: 2px
+        margin-right: 2px             
   &-info
     display: flex
     align-items: center
@@ -51,3 +53,6 @@
     font-weight: bold
     font-size: 14px
     line-height: 18px
+  &__max
+    font-size: 10px
+    line-height: 13px

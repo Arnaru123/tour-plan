@@ -1,12 +1,13 @@
 .navbar
-  background-color: #ffffff
+  background-color: $light
   &-top
-    display: flex
-    padding: 40px 0 40px 0
+    display: flex    
     align-items: center
     justify-content: space-between
+    padding: 40px 0 40px 0
     &__logo
       width: 177px
+      height: 20px
     &__menu-button
       display: none
   &__search
@@ -17,6 +18,7 @@
     background-color: #0A223D
   &-menu
     display: flex
+    align-items: center
     justify-content: space-between
     text-transform: uppercase
     &__link
@@ -42,9 +44,11 @@
     font-size: 12px
     line-height: 15px
     color: $text-color
-    &::placeholder 
+    &::placeholder
+      font-size: 12px
+      line-height: 15px
       color: $text-color
-  &__button
+  &__button       
     position: absolute
     top: 0
     right: 0
@@ -55,6 +59,9 @@
     &:active, &:focus      
       outline: none
       background-color: pink
+  &__icon    
+    max-width: 16px
+    max-height: 16px
 .user
   display: flex
   align-items: center

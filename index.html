@@ -14,11 +14,9 @@
     <header class="navbar">
       <div class="container">
         <div class="navbar-top">
-          <img
-            src="img/logo.svg"
-            alt="Best Tour Plan logo"
-            class="navbar-top__logo"
-          />
+          <svg class="icon navbar-top__logo">
+            <use xlink:href="img/sprite.svg#logo"></use>
+          </svg>
           <form action="#" class="search navbar__search">
             <input
               type="text"
@@ -26,11 +24,9 @@
               placeholder="Search Location"
             />
             <button class="search__button">
-              <img
-                src="img/search-icon.svg"
-                alt="search button"
-                class="search-icon"
-              />
+              <svg class="icon search__icon">
+                <use xlink:href="img/sprite.svg#search-icon"></use>
+              </svg>
             </button>
           </form>
           <a href="#" class="user navbar__user">
@@ -87,11 +83,21 @@
           <div class="hotel-info__text">
             <div class="hotel-wrapper">
               <div class="stars hotel-stars">
-                <img class="hotel-stars__star" src="img/star.svg" alt="Stars" />
-                <img class="hotel-stars__star" src="img/star.svg" alt="Stars" />
-                <img class="hotel-stars__star" src="img/star.svg" alt="Stars" />
-                <img class="hotel-stars__star" src="img/star.svg" alt="Stars" />
-                <img class="hotel-stars__star" src="img/star.svg" alt="Stars" />
+                <svg class="icon hotel-stars__icon">
+                  <use xlink:href="img/sprite.svg#star"></use>
+                </svg>
+                <svg class="icon hotel-stars__icon">
+                  <use xlink:href="img/sprite.svg#star"></use>
+                </svg>
+                <svg class="icon hotel-stars__icon">
+                  <use xlink:href="img/sprite.svg#star"></use>
+                </svg>
+                <svg class="icon hotel-stars__icon">
+                  <use xlink:href="img/sprite.svg#star"></use>
+                </svg>
+                <svg class="icon hotel-stars__icon">
+                  <use xlink:href="img/sprite.svg#star"></use>
+                </svg>
               </div>
               <h1 class="hotel-name hotel-info__name">GRAND HILTON HOTEL</h1>
               <span class="offer hotel-info__offer">Flash Offer</span>
@@ -105,7 +111,9 @@
           <!-- /.hotel-info__left -->
           <div class="rating hotel-info__rating">
             <span class="rating__text">User Rattings</span>
-            <span class="rating__counter">4.5/5</span>
+            <span class="rating__counter"
+              >4.5/<span class="rating__max">5</span></span
+            >
           </div>
           <!-- /.hotel-info__right -->
         </div>

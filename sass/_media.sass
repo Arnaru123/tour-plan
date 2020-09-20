@@ -6,25 +6,28 @@
     max-width: 760px    
 @media (max-width: 768px)
   .container
-    width: 673px
+    max-width: 700px
     width: 92%
   .navbar
-    &-top
+    &-top      
       padding: 30px 0
       &__logo
-        width: 132px
+        width: 132px        
     &__search
-      margin-left: auto
+      margin-left: 47px
     &-bottom
       padding: 22px 0    
     &-menu
-      &__link
+      justify-content: center
+      &__link        
         font-size: 12px
         line-height: 15px
+        &:not(:last-child)
+          margin-right: 25px          
   .search
     &__input
       width: 340px
-@media (max-width: 650px)
+@media (max-width: 740px)
   .user
     &__name
       display: none
@@ -32,7 +35,51 @@
     &__link
       font-weight: 400
       font-size: 10px  
-@media (max-width: 576px)
+@media (max-width: 640px) and 
+  .container
+    max-width: 500px
+    width: 92%
+  .navbar   
+    &-top
+      padding: 28px 0      
+      &__logo
+        width: 99px
+    &-bottom, &__search, &__user
+      display: none
+  .menu
+    &-button
+      display: flex
+      width: 16px      
+      align-items: center
+      justify-content: space-between
+      flex-direction: column
+      border: none
+      cursor: pointer
+      background-color: $light
+      &__line
+        width: 16px
+        height: 1px
+        background-color: $text-color
+        &:not(:last-child)
+          margin-bottom: 4px          
+  .stars
+    flex-basis: auto
+  .hotel
+    &-name
+      flex-basis: 100%
+    &-wrapper
+      justify-content: space-between
+    &-info
+      &__text
+        width: 100%
+      &__name
+        margin: 10px 0 0 0
+      &__rating
+        display: none
+      &__offer
+        margin-left: 0
+        order: -1
+// @media (max-width: 576px)
   .navbar   
     &-top
       padding: 28px 0      
@@ -72,3 +119,13 @@
       &__offer
         margin-left: 0
         order: -1
+
+@media (max-width: 320px)
+  .hotel
+    padding: 5px 0 20px 0
+    &-stars
+      margin-left: 145px
+      margin-right: auto
+    &-info
+      &__offer
+        margin-top: 0
