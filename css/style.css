@@ -812,7 +812,10 @@ img, svg {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 480px) {
+  .container {
+    max-width: 280px;
+  }
   .hotel {
     padding: 5px 0 20px 0;
   }
