@@ -33,16 +33,16 @@
     font-size: 36px
     line-height: 45px
     text-transform: uppercase
-  &-subscribe
-    position: relative
-    height: 55px
+  &-subscribe    
+    display: flex
+    width: 350px    
     border-radius: 4px
     overflow: hidden
     &__input
-      width: 350px
-      height: 100%
+      width: 100%
+      min-height: 55px
       padding-left: 33px
-      padding-right: 75px      
+      padding-right: 10px      
       border: none
       outline: none
       font-size: 12px
@@ -53,16 +53,17 @@
         font-size: 14px
         line-height: 18px
         color: #BDBDBD
-    &__button
-      position: absolute
-      right: 0
-      top: 0
-      width: 65px
-      height: 100%
+    &__button      
+      display: flex
+      min-width: 65px           
       border: none
       font-weight: bold
       font-size: 12px
       line-height: 15px
       color: $light
       background-color: $primary
+  .button
+    padding: 0
+    &__text
+      padding: 20px 18px
 
