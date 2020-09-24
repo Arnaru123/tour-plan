@@ -256,24 +256,75 @@
       <!-- /.newsletter-wrapper -->
     </section>
     <!-- /.newsletter -->
-    <section class="guest-review">
+    <section class="review">
       <div class="container">
-        <div class="swiper-container">
+        <h2 class="review__title">What people thinks about us</h2>
+        <div class="swiper-container review-container">
           <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
+          <div class="swiper-wrapper review-wrapper">
             <!-- Slides -->
-            <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide review-slide">
+              <div class="review-slide__card">
+                <img
+                  src="img/review-avatar.jpg"
+                  alt="Photo reviewer"
+                  class="review__avatar"
+                />
+                <div class="review-slide__header">
+                  <h3 class="review__name">Megan Fox</h3>
+                  <span class="review__date">Stayed 18 Nov, 2019</span>
+                  <div class="stars review-stars">
+                    <svg class="icon review-stars__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="icon review-stars__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="icon review-stars__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="icon review-stars__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="icon review-stars__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </div>
+                </div>
+                <!-- /.review-slide__header -->
+                <p class="review-text">
+                  It was very nice hotel with cleanliness. Staff behavior was
+                  good and polite. They welcome us very well. Issue was only
+                  that Lift was not in working and we were allotted to 3rd floor
+                  and amenities articles were in corner of gallery which were
+                  giving bad feeling. Breakfast was good and support of the
+                  staff was also very nice. Location is not good as per
+                  atmosphere, it is very nearby most of the popular places but
+                  self location in a narrow street is not good. Overall it was a
+                  good experience and could recommend.
+                </p>
+              </div>
+              <!-- /.review-slide__card -->
+            </div>
+            <!-- <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div> -->
           </div>
           <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+          <button class="slider-button slide-button_prev">
+            <svg class="icon slider-button__icon">
+              <use xlink:href="img/sprite.svg#arrow-prev"></use>
+            </svg>
+          </button>
+          <button class="slider-button slide-button_next">
+            <svg class="icon slider-button__icon">
+              <use xlink:href="img/sprite.svg#arrow-next"></use>
+            </svg>
+          </button>
         </div>
       </div>
       <!-- /.container -->
     </section>
-    <!-- /.guest-review -->
+    <!-- /.review -->
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
