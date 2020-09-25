@@ -100,6 +100,7 @@
                   <use xlink:href="img/sprite.svg#star"></use>
                 </svg>
               </div>
+              <!-- /.hotel-stars -->
               <h1 class="hotel-name hotel-info__name">GRAND HILTON HOTEL</h1>
               <span class="offer hotel-info__offer">Flash Offer</span>
             </div>
@@ -109,74 +110,67 @@
               Free
             </p>
           </div>
-          <!-- /.hotel-info__left -->
+          <!-- /.hotel-info__text -->
           <div class="rating hotel-info__rating">
             <span class="rating__text">User Rattings</span>
             <span class="rating__counter"
               >4.5/<span class="rating__max">5</span></span
             >
           </div>
-          <!-- /.hotel-info__right -->
+          <!-- /.hotel-info__rating -->
         </div>
         <!-- /.hotel-info -->
         <div class="hotel-grid">
-          <div class="slider">
-            <!-- Slider main container -->
-            <div class="swiper-container slider-container">
-              <!-- Additional required wrapper -->
-              <div class="swiper-wrapper slider-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide slider-slide">
-                  <img
-                    src="img/slide1.jpg"
-                    class="slider-slide__img"
-                    alt="Slide"
-                  />
-                </div>
-                <div class="swiper-slide slider-slide">
-                  <img
-                    src="img/slide2.jpg"
-                    class="slider-slide__img"
-                    alt="Slide"
-                  />
-                </div>
-                <div class="swiper-slide slider-slide">
-                  <img
-                    src="img/slide3.jpg"
-                    class="slider-slide__img"
-                    alt="Slide"
-                  />
-                </div>
-                <div class="swiper-slide slider-slide">
-                  <img
-                    src="img/slide4.jpg"
-                    class="slider-slide__img"
-                    alt="Slide"
-                  />
-                </div>
-                <div class="swiper-slide slider-slide">
-                  <img
-                    src="img/slide5.jpg"
-                    class="slider-slide__img"
-                    alt="Slide"
-                  />
-                </div>
+          <div class="swiper-container hotel-slider hotel__slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide hotel-slider__item">
+                <img
+                  src="img/slide1.jpg"
+                  class="hotel-slider__img"
+                  alt="Slide"
+                />
               </div>
-              <!-- If we need navigation buttons -->
-              <button class="slider-button slider-button_prev">
-                <svg class="icon slider-button__icon">
-                  <use xlink:href="img/sprite.svg#arrow-prev"></use>
-                </svg>
-              </button>
-              <button class="slider-button slider-button_next">
-                <svg class="icon slider-button__icon">
-                  <use xlink:href="img/sprite.svg#arrow-next"></use>
-                </svg>
-              </button>
+              <div class="swiper-slide hotel-slider__item">
+                <img
+                  src="img/slide2.jpg"
+                  class="hotel-slider__img"
+                  alt="Slide"
+                />
+              </div>
+              <div class="swiper-slide hotel-slider__item">
+                <img
+                  src="img/slide3.jpg"
+                  class="hotel-slider__img"
+                  alt="Slide"
+                />
+              </div>
+              <div class="swiper-slide hotel-slider__item">
+                <img
+                  src="img/slide4.jpg"
+                  class="hotel-slider__img"
+                  alt="Slide"
+                />
+              </div>
+              <div class="swiper-slide hotel-slider__item">
+                <img
+                  src="img/slide5.jpg"
+                  class="hotel-slider__img"
+                  alt="Slide"
+                />
+              </div>
             </div>
-            <!-- /.swiper-container slider-container -->
+            <button class="hotel-slider__button hotel-slider__button_prev">
+              <svg class="icon hotel-slider__button-icon">
+                <use xlink:href="img/sprite.svg#arrow-prev"></use>
+              </svg>
+            </button>
+            <button class="hotel-slider__button hotel-slider__button_next">
+              <svg class="icon hotel-slider__button-icon">
+                <use xlink:href="img/sprite.svg#arrow-next"></use>
+              </svg>
+            </button>
           </div>
-          <!-- /.slider -->
+          <!-- /.hotel-slider hotel__slider -->
           <div class="hotel__block">
             <div class="booking">
               <div class="booking__info">
@@ -225,7 +219,8 @@
                 allowfullscreen=""
                 aria-hidden="false"
                 tabindex="0"
-              ></iframe>
+              >
+              </iframe>
             </div>
             <!-- /.hotel-map -->
           </div>
@@ -256,43 +251,41 @@
       <!-- /.newsletter-wrapper -->
     </section>
     <!-- /.newsletter -->
-    <section class="review">
+    <section class="reviews">
       <div class="container">
-        <h2 class="review__title">What people thinks about us</h2>
-        <div class="swiper-container review-container">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper review-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide review-slide">
-              <div class="review-slide__card">
-                <div class="review-slide__header">
+        <h2 class="reviews__title">What people thinks about us</h2>
+        <div class="swiper-container reviews-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="reviews-slider__card">
+                <div class="reviews-slider__header">
                   <img
                     src="img/review-avatar.jpg"
                     alt="Photo reviewer"
-                    class="review__avatar"
+                    class="reviews-slider__avatar"
                   />
-                  <h3 class="review__name">Megan Fox</h3>
-                  <span class="review__date">Stayed 18 Nov, 2019</span>
-                  <div class="stars review-stars">
-                    <svg class="icon review-stars__icon">
+                  <h3 class="reviews-slider__name">Megan Fox</h3>
+                  <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
+                  <div class="stars reviews-stars">
+                    <svg class="icon reviews-stars__icon">
                       <use xlink:href="img/sprite.svg#star"></use>
                     </svg>
-                    <svg class="icon review-stars__icon">
+                    <svg class="icon reviews-stars__icon">
                       <use xlink:href="img/sprite.svg#star"></use>
                     </svg>
-                    <svg class="icon review-stars__icon">
+                    <svg class="icon reviews-stars__icon">
                       <use xlink:href="img/sprite.svg#star"></use>
                     </svg>
-                    <svg class="icon review-stars__icon">
+                    <svg class="icon reviews-stars__icon">
                       <use xlink:href="img/sprite.svg#star"></use>
                     </svg>
-                    <svg class="icon review-stars__icon">
+                    <svg class="icon reviews-stars__icon">
                       <use xlink:href="img/sprite.svg#star"></use>
                     </svg>
                   </div>
                 </div>
                 <!-- /.review-slide__header -->
-                <p class="review-text">
+                <p class="reviews-slider__text">
                   It was very nice hotel with cleanliness. Staff behavior was
                   good and polite. They welcome us very well. Issue was only
                   that Lift was not in working and we were allotted to 3rd floor
@@ -304,154 +297,113 @@
                   good experience and could recommend.
                 </p>
               </div>
-              <!-- /.review-slide__card -->
+              <!-- /.reviews-slide__card -->
             </div>
-            <div class="swiper-slide review-slide">
-              <div class="review-slide__card">
-                <div class="review-slide__header">
+            <!-- /.swiper-slide -->
+            <div class="swiper-slide">
+              <div class="reviews-slider__card">
+                <div class="reviews-slider__header">
                   <img
                     src="img/review-avatar2.jpg"
                     alt="Photo reviewer"
-                    class="review__avatar"
+                    class="reviews-slider__avatar"
                   />
-                  <h3 class="review__name">Rehard Gere</h3>
-                  <span class="review__date">Stayed 21 March, 2008</span>
-                  <div class="stars review-stars">
-                    <svg class="icon review-stars__icon">
+                  <h3 class="reviews-slider__name">Rehard Gere</h3>
+                  <span class="reviews-slider__date">Stayed 13 Nov, 2019</span>
+                  <div class="stars reviews-stars">
+                    <svg class="icon reviews-stars__icon">
                       <use xlink:href="img/sprite.svg#star"></use>
                     </svg>
-                    <svg class="icon review-stars__icon">
+                    <svg class="icon reviews-stars__icon">
                       <use xlink:href="img/sprite.svg#star"></use>
                     </svg>
-                    <svg class="icon review-stars__icon">
+                    <svg class="icon reviews-stars__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="icon reviews-stars__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="icon reviews-stars__icon">
                       <use xlink:href="img/sprite.svg#star"></use>
                     </svg>
                   </div>
                 </div>
                 <!-- /.review-slide__header -->
-                <p class="review-text">
+                <p class="reviews-slider__text">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Ratione perferendis laboriosam asperiores! Earum harum dicta
-                  saepe! Cumque nisi quis suscipit. Necessitatibus officia,
-                  veniam consectetur alias expedita voluptatibus doloremque.
-                  Fugiat nam fugit, cum dolor alias, voluptatum assumenda libero
-                  impedit, asperiores vero quidem! Blanditiis, quam libero.
-                  Facere exercitationem architecto maxime aut voluptates.
+                  Beatae iure recusandae corporis fuga eum. Ullam voluptas
+                  sapiente hic illo nihil fugit cupiditate, temporibus pariatur,
+                  eaque, autem quisquam maxime repudiandae cumque. Enim eligendi
+                  totam atque, sequi nesciunt, in est qui excepturi consectetur,
+                  sunt modi hic? Dignissimos doloremque aperiam commodi beatae
+                  ratione.
                 </p>
               </div>
-              <!-- /.review-slide__card -->
+              <!-- /.reviews-slide__card -->
             </div>
-            <div class="swiper-slide review-slide">
-              <div class="review-slide__card">
-                <div class="review-slide__header">
+            <!-- /.swiper-slide -->
+            <div class="swiper-slide">
+              <div class="reviews-slider__card">
+                <div class="reviews-slider__header">
                   <img
                     src="img/review-avatar3.jpg"
                     alt="Photo reviewer"
-                    class="review__avatar"
+                    class="reviews-slider__avatar"
                   />
-                  <h3 class="review__name">Tomas Marlowe</h3>
-                  <span class="review__date">Stayed 25 Dec, 2019</span>
-                  <div class="stars review-stars">
-                    <svg class="icon review-stars__icon">
+                  <h3 class="reviews-slider__name">Tomas Marlowe</h3>
+                  <span class="reviews-slider__date">Stayed 25 Dec, 2019</span>
+                  <div class="stars reviews-stars">
+                    <svg class="icon reviews-stars__icon">
                       <use xlink:href="img/sprite.svg#star"></use>
                     </svg>
-                    <svg class="icon review-stars__icon">
+                    <svg class="icon reviews-stars__icon">
                       <use xlink:href="img/sprite.svg#star"></use>
                     </svg>
-                    <svg class="icon review-stars__icon">
+                    <svg class="icon reviews-stars__icon">
                       <use xlink:href="img/sprite.svg#star"></use>
                     </svg>
-                    <svg class="icon review-stars__icon">
+                    <svg class="icon reviews-stars__icon">
                       <use xlink:href="img/sprite.svg#star"></use>
                     </svg>
-                    <svg class="icon review-stars__icon">
+                    <svg class="icon reviews-stars__icon">
                       <use xlink:href="img/sprite.svg#star"></use>
                     </svg>
                   </div>
                 </div>
                 <!-- /.review-slide__header -->
-                <p class="review-text">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum
-                  tempore commodi modi, in accusantium eos officia, animi eius
-                  eaque amet dolores architecto! Officiis, dignissimos? Debitis,
-                  iste accusamus nostrum eius quia quaerat aliquam repudiandae
-                  consequatur dolorum unde quos autem, obcaecati nemo expedita
-                  dolore at? Architecto adipisci quis placeat omnis, ea nam
-                  repudiandae, quasi impedit vero ducimus sapiente nesciunt
-                  eligendi blanditiis itaque, fuga eum? Deserunt in omnis nobis
-                  sed. Quaerat quisquam quo harum veniam iusto. Itaque assumenda
-                  nemo et, cupiditate repudiandae eaque, debitis suscipit eum
-                  officiis, hic aut quisquam ipsa atque. Ex facere voluptatem,
-                  quod eligendi exercitationem natus ipsam. Eveniet incidunt
-                  expedita cupiditate nulla natus quis fugiat, asperiores
-                  dolorem voluptatem beatae. Saepe eum necessitatibus, tempora
-                  officiis ad et officia minima, dignissimos dicta illo
-                  voluptates aspernatur doloribus molestias nihil voluptas
-                  perspiciatis vel beatae expedita? Voluptates quidem maxime
-                  natus nobis nostrum, inventore sit asperiores rerum quod
-                  illum, praesentium accusantium possimus illo ea fuga magni,
-                  molestias accusamus? Dolorem porro sequi facere id nihil sed
-                  illum consequatur voluptas hic expedita veniam corporis
-                  deleniti sunt vel dolorum, nobis obcaecati! Aut esse eligendi
-                  recusandae nesciunt tempore, illo accusantium! Ad ullam ipsam
-                  eligendi est qui rem tempora cupiditate culpa enim! Nobis,
-                  enim? Possimus ab, cupiditate maiores reprehenderit doloribus
-                  voluptate at porro animi repellendus tempora expedita beatae
-                  inventore labore enim soluta molestiae consequuntur velit
-                  nemo. Rem odit voluptate minus atque excepturi nesciunt
-                  suscipit, consequatur quae et iusto perferendis quidem.
-                  Impedit eaque eius dignissimos blanditiis neque amet
-                  consectetur quae fugiat repellendus, fuga illum autem laborum
-                  porro sit, quo omnis. Dicta eum, fugiat sint, accusamus
-                  veritatis sequi cum odit, corrupti velit earum numquam
-                  voluptatem non eligendi quaerat incidunt dolore? Eveniet
-                  adipisci possimus atque facilis debitis! Debitis aliquid, quia
-                  hic neque molestias expedita officiis quis aliquam eos atque
-                  eaque illum molestiae in earum magni sed voluptates totam
-                  tempora assumenda iste odit distinctio fuga non? Consectetur,
-                  praesentium? Eos molestiae fugiat alias, veniam voluptas rem
-                  distinctio reprehenderit enim quam cupiditate! Aliquid,
-                  tempore. Nam velit rerum incidunt blanditiis fugiat natus
-                  explicabo tempora ducimus, laborum deserunt, eaque nemo
-                  officiis perferendis ullam id enim minima magni. Laudantium
-                  delectus labore laborum consequuntur, error fugiat dolore
-                  incidunt illo facere ipsa molestias quia blanditiis enim
-                  voluptatem aut nobis harum culpa quibusdam iure voluptatibus
-                  repellendus perferendis veniam perspiciatis. Voluptas nesciunt
-                  iusto aperiam, ipsam beatae cum voluptatem suscipit fugiat
-                  eaque libero accusantium quod, placeat itaque dolorem
-                  blanditiis labore? Animi vero quos itaque! Cumque laborum
-                  beatae quis earum doloremque minima iusto cum, asperiores ad
-                  ipsum nesciunt, repellendus blanditiis consectetur, nisi
-                  dolorum. Nam aliquam officiis accusantium vel odit totam culpa
-                  rem accusamus, velit enim amet officia nobis debitis
-                  repudiandae quae, in perspiciatis facilis earum asperiores
-                  eligendi repellendus eius quidem. Repudiandae facere assumenda
-                  explicabo, placeat quos, omnis adipisci sapiente quis vel
-                  autem amet neque ducimus voluptatem sit veritatis voluptate
-                  repellat sunt magni modi natus voluptates exercitationem
-                  culpa. Itaque esse ut deleniti enim magnam sed nulla facere
-                  sequi aspernatur, eligendi vero veritatis facilis expedita
-                  laborum? Eveniet, veritatis iure molestias, fuga eos ipsam
-                  illo rerum fugit perspiciatis expedita debitis nemo ipsum et!
-                  Voluptate neque ducimus fugiat commodi iusto?
+                <p class="reviews-slider__text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Impedit hic ea animi voluptas totam dignissimos incidunt
+                  facere eveniet, placeat aperiam corporis officiis porro
+                  possimus quia odit perferendis sit itaque soluta iure libero
+                  obcaecati laboriosam! Ipsum minus aperiam eos aut voluptate
+                  dicta molestias, unde consequatur voluptatibus nam debitis
+                  temporibus eum perferendis sunt recusandae est libero natus
+                  tenetur nesciunt? Eius alias id, consequuntur, deleniti
+                  delectus provident quo, suscipit reiciendis maiores impedit
+                  obcaecati voluptate voluptatem deserunt. Vel, sed quisquam ex
+                  tempora modi dolorum debitis sint. Inventore dolorum tenetur
+                  velit unde asperiores nam quod quidem placeat deleniti culpa
+                  delectus numquam, earum, sed animi consectetur?
                 </p>
               </div>
-              <!-- /.review-slide__card -->
+              <!-- /.reviews-slide__card -->
             </div>
+            <!-- /.swiper-slide -->
           </div>
-          <!-- If we need navigation buttons -->
-          <button class="slider-button review-button_prev">
-            <svg class="icon review-button__icon">
+          <!-- /.swiper-wrapper -->
+          <button class="reviews-slider__button reviews-slider__button_prev">
+            <svg class="icon reviews-slider__button-icon">
               <use xlink:href="img/sprite.svg#arrow-prev"></use>
             </svg>
           </button>
-          <button class="slider-button review-button_next">
-            <svg class="icon review-button__icon">
+          <button class="reviews-slider__button reviews-slider__button_next">
+            <svg class="icon reviews-slider__button-icon">
               <use xlink:href="img/sprite.svg#arrow-next"></use>
             </svg>
           </button>
         </div>
+        <!-- /.reviews-slider -->
       </div>
       <!-- /.container -->
     </section>
