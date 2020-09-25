@@ -1,20 +1,23 @@
 @media (max-width: 1200px)
   .container
     max-width: 960px
-  .slider
-    width: 600px
+  .hotel
+    &-slider
+      width: 600px
   .booking
-    width: 340px       
+    width: 340px
+
 @media (max-width: 992px)
   .container,
   .newsletter-wrapper
     max-width: 700px
+    width: 92%
   .navbar
     &__search
-      margin-left: auto
-  .slider
-    width: 100%
+      margin-left: auto  
   .hotel
+    &-slider
+      width: 100%
     &__block
       display: flex
       flex-wrap: wrap
@@ -24,12 +27,15 @@
       margin-top: 30px
     &__map
       width: 340px
-      height: 210px            
-@media (max-width: 768px)
-  .container,
-  .newsletter-wrapper
-    max-width: 700px
-    width: 92%
+      height: 210px
+  .review
+    &-slide
+      &__card
+        max-width: 580px
+    &-text
+      width: 78%
+
+@media (max-width: 768px)    
   .navbar
     &-top      
       padding: 30px 0
@@ -55,11 +61,13 @@
       width: 100%      
     &__map      
       height: 210px
-  .slider
-    &-button
-      transform: translateY(-30%)
+    &-slider
+      &__button
+        transform: translateY(-30%)
   .booking    
-    padding: 28px 22px        
+    padding: 28px 22px
+  
+  
 @media (max-width: 760px)
   .hotel
     padding-bottom: 60px
@@ -76,7 +84,8 @@
     width: 100%
   .newsletter    
     &-subscribe
-      width: 280px     
+      width: 280px  
+
 @media (max-width: 740px)  
   .navbar-menu
     &__link
@@ -87,10 +96,12 @@
       &__card
         max-width: 580px
     &-button
+      top: 13% !important
       &_prev
-        left: 20px
+        left: 240px
       &_next
-        right: 20px
+        right: 240px
+
 @media (max-width: 640px)
   .container
     max-width: 500px
@@ -122,6 +133,8 @@
     flex-basis: auto
   .hotel
     padding-bottom: 40px
+    &-slider
+      height: 350px
     &-name
       flex-basis: 100%
     &-wrapper
@@ -137,9 +150,7 @@
         margin-left: 0
         order: -1
       &__description
-        padding-bottom: 38px
-  .slider
-    height: 350px
+        padding-bottom: 38px  
   .newsletter    
     &-wrapper
       height: 160px
@@ -153,46 +164,6 @@
     &__strong
       font-size: 30px
       line-height: 38px    
-// @media (max-width: 576px)
-  .navbar   
-    &-top
-      padding: 28px 0      
-      &__logo
-        width: 99px
-    &-bottom, &__search, &__user
-      display: none
-  .menu
-    &-button
-      display: flex
-      width: 16px
-      height: 11px
-      align-items: center
-      justify-content: space-between
-      flex-direction: column
-      border: none
-      cursor: pointer
-      background-color: $light
-      &__line
-        width: 16px
-        height: 1px
-        background-color: $text-color
-  .stars
-    flex-basis: auto
-  .hotel
-    &-name
-      flex-basis: 100%
-    &-wrapper
-      justify-content: space-between
-    &-info
-      &__text
-        width: 100%
-      &__name
-        margin: 10px 0 0 0
-      &__rating
-        display: none
-      &__offer
-        margin-left: 0
-        order: -1
 
 @media (max-width: 480px)
   .container
@@ -205,14 +176,14 @@
     &-info
       &__offer
         margin-top: 0
-  .slider
-    height: 175px
-    &-button
-      &__icon
-        width: 4px
-        height: 7px
-      &_prev
-        left: 5px
-      &_next
-        right: 5px
+    &-slider
+      height: 175px
+      &__button
+        &-icon
+          width: 4px
+          height: 7px
+        &_prev
+          left: 5px
+        &_next
+          right: 5px
   

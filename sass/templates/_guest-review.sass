@@ -1,4 +1,4 @@
-.review
+.reviews
   padding: 40px 0 70px 0
   &__title
     margin: 0
@@ -8,79 +8,98 @@
     line-height: 45px
     text-align: center
     text-transform: uppercase
-    color: $text-color
-  &-container       
-  &-slide
-    display: flex               
+    color: $text-color         
+  &-slider                   
     &__card
-      position: relative
-      width: 730px           
-      padding: 54px 0 30px 0      
-      margin: 0 auto
+      display: flex
+      flex-direction: column
+      align-items: center      
+      width: 730px
+      margin: auto           
+      padding: 54px 62px 30px     
       margin-top: 45px
+      position: relative
       border-radius: 8px      
-      background-color: $light          
+      background-color: #ffffff
+      &:before
+        content: ''
+        position: absolute
+        top: 13px
+        left: 62px
+        width: 70px
+        height: 47px
+        background-image: url(../img/quote-left.svg)
+        background-repeat: no-repeat
+      &:after
+        content: ''
+        position: absolute
+        top: 118px        
+        right: 62px
+        width: 70px
+        height: 47px
+        background-image: url(../img/quote-right.svg)
+        background-repeat: no-repeat   
     &__header
       display: flex
       flex-direction: column
       align-items: center
-  &-button
-    position: absolute        
-    border: none
-    outline: none
-    cursor: pointer
-    background-color: transparent
-    top: 45%
-    &_prev
-      left: 30px
-    &_next
-      right: 30px
-    &__icon
-      width: 10px
-      height: 18px
-      fill: $grey
-      fill-opacity: 0.8      
-  &__avatar
-    position: absolute
-    top: -15%
-    left: 44%
-    z-index: 10
-    width: 90px
-    height: 90px
-    border-radius: 50%
-    object-fit: cover    
-  &__name
-    margin: 0
-    margin-bottom: 10px
-    font-weight: bold
-    font-size: 12px
-    line-height: 15px
-    color: $primary
-  &__date
-    margin-bottom: 4px
-    font-weight: normal
-    font-size: 10px
-    line-height: 13px
+      margin-bottom: 30px      
+    &__avatar      
+      width: 90px
+      height: 90px
+      position: absolute
+      border-radius: 50%
+      object-fit: cover
+      top: -45px
+      margin-bottom: 9px
+    &__name
+      margin: 0
+      margin-bottom: 10px
+      font-weight: bold
+      font-size: 12px
+      line-height: 15px
+      color: $primary
+    &__date
+      margin-bottom: 4px
+      font-weight: normal
+      font-size: 10px
+      line-height: 13px
+    &__text
+      width: 540px
+      max-height: 115px
+      margin: auto
+      text-align: justify
+      font-weight: normal
+      font-size: 12px
+      line-height: 160%
+      overflow: hidden
+      text-overflow: ellipsis
+    &__control
+      display: flex
+      align-items: center
+      justify-content: space-between      
+    &__button
+      position: absolute
+      top: 50%
+      z-index: 10
+      transform: translateY(-50%)
+      border: none
+      background-color: transparent
+      cursor: pointer
+      &_prev
+        left: 0
+      &_next
+        right: 0
+      &-icon
+        width: 10px
+        height: 18px
+        fill: $grey
+        fill-opacity: 0.8      
   &-stars
     display: flex
     align-items: center        
     &__icon
       width: 8px
-      height: 8px
-      margin-bottom: 33px
+      height: 8px      
       &:not(:last-child)
         margin-right: 2px
-  &-text
-    width: 540px
-    max-height: 115px
-    margin: auto
-    text-align: justify
-    font-weight: normal
-    font-size: 12px
-    line-height: 160%    
-    overflow: hidden
-    text-overflow: ellipsis
-    
-      
-
-    
