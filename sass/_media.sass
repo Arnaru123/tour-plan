@@ -28,12 +28,12 @@
     &__map
       width: 340px
       height: 210px
-  .review
-    &-slide
+  .reviews
+    &-slider
       &__card
         max-width: 580px
-    &-text
-      width: 78%
+      &__text
+        width: 78%
 
 @media (max-width: 768px)    
   .navbar
@@ -66,7 +66,28 @@
         transform: translateY(-30%)
   .booking    
     padding: 28px 22px
-  
+  .reviews
+    &__title
+      font-size: 30px
+      line-height: 38px
+    &-slider
+      &__card
+        padding: 54px 30px 30px
+        &:before,
+        &:after
+          display: none
+      &__button
+        top: 35px        
+        &_prev
+          left: 50%          
+          margin-left: -65px
+          transform: translate(-50%, 0)
+        &_next
+          right: 50%
+          margin-right: -65px
+          transform: translate(50%, 0)
+      &__text
+        max-width: 455px
   
 @media (max-width: 760px)
   .hotel
@@ -91,16 +112,15 @@
     &__link
       font-weight: 400
       font-size: 10px
-  .review
-    &-slide      
+  .reviews
+    &__title
+      font-size: 18px 
+      line-height: 23px
+    &-slider      
       &__card
-        max-width: 580px
-    &-button
-      top: 13% !important
-      &_prev
-        left: 240px
-      &_next
-        right: 240px
+        max-width: 580px      
+      &__text
+        max-height: 266px
 
 @media (max-width: 640px)
   .container
@@ -186,4 +206,15 @@
           left: 5px
         &_next
           right: 5px
+  .reviews
+    &-slider
+      &__button
+        &_prev
+          left: 40%
+          margin-left: -65px
+          transform: translate(-50%, 0)
+        &_next
+          right: 40%
+          margin-right: -65px
+          transform: translate(50%, 0)
   
