@@ -11,3 +11,16 @@ var mySwiper = new Swiper(".swiper-container", {
     prevEl: ".slider-button",
   },
 });
+var reviewSlider = new Swiper(".review-container", {
+  // Optional parameters
+  loop: true,
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
+  // Navigation arrows
+  navigation: {
+    nextEl: ".review-button_next",
+    prevEl: ".review-button_prev",
+  },
+});

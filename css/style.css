@@ -1055,10 +1055,6 @@ img {
   color: #333333;
 }
 
-.review-container {
-  overflow: visible;
-}
-
 .review-slide {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1070,7 +1066,8 @@ img {
   position: relative;
   width: 730px;
   padding: 54px 0 30px 0;
-  margin: auto;
+  margin: 0 auto;
+  margin-top: 45px;
   -webkit-border-radius: 8px;
           border-radius: 8px;
   background-color: #ffffff;
@@ -1092,17 +1089,41 @@ img {
           align-items: center;
 }
 
+.review-button {
+  position: absolute;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  top: 45%;
+}
+
+.review-button_prev {
+  left: 30px;
+}
+
+.review-button_next {
+  right: 30px;
+}
+
+.review-button__icon {
+  width: 10px;
+  height: 18px;
+  fill: #828282;
+  fill-opacity: 0.8;
+}
+
 .review__avatar {
   position: absolute;
   top: -15%;
   left: 44%;
+  z-index: 10;
   width: 90px;
   height: 90px;
   -webkit-border-radius: 50%;
           border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
-  margin-bottom: 9px;
 }
 
 .review__name {
@@ -1144,39 +1165,15 @@ img {
 
 .review-text {
   width: 540px;
+  max-height: 115px;
   margin: auto;
   text-align: justify;
   font-weight: normal;
   font-size: 12px;
   line-height: 160%;
-}
-
-.slide-button {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
-  z-index: 50;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  background-color: transparent;
-}
-
-.slide-button_prev {
-  left: 20px;
-}
-
-.slide-button_next {
-  right: 20px;
-}
-
-.slider-button__icon {
-  width: 10px;
-  height: 18px;
-  fill: #828282;
-  fill-opacity: 0.8;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
 }
 
 @media (max-width: 1200px) {
@@ -1309,6 +1306,15 @@ img {
   .navbar-menu__link {
     font-weight: 400;
     font-size: 10px;
+  }
+  .review-slide__card {
+    max-width: 580px;
+  }
+  .review-button_prev {
+    left: 20px;
+  }
+  .review-button_next {
+    right: 20px;
   }
 }
 
