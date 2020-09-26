@@ -6,6 +6,9 @@
       width: 600px
   .booking
     width: 340px
+  .card
+    width: 230px
+    height: 230px
 
 @media (max-width: 992px)
   .container,
@@ -33,7 +36,15 @@
       &__card
         max-width: 580px
       &__text
-        width: 78%
+        width: 87%
+  .activities
+    &-wrapper
+      flex-wrap: wrap
+    &__card
+      margin-bottom: 20px
+  .card
+    width: 340px
+    height: 230px
 
 @media (max-width: 768px)    
   .navbar
@@ -56,20 +67,59 @@
     &__input
       width: 340px
   .hotel
+    padding-bottom: 60px
+    &__block
+      display: flex    
+    &-slider
+      &__button
+        transform: translateY(-30%)  
+  .booking       
+    padding: 28px 22px  
+  .reviews
+    &__title
+      margin-bottom: 50px
+      font-size: 30px
+      line-height: 38px
+    &-slider
+      &__card
+        padding: 54px 30px 30px
+        &:before,
+        &:after
+          display: none
+      &__button
+        top: 162px        
+        &_prev          
+          transform: translate(-50%, 0)
+        &_next
+          right: 15px          
+          transform: translate(50%, 0)
+      &__text
+        max-height: 133px      
+  .activities
+    padding: 54px 0 60px 0
+    &__card
+      padding-right: 110px
+  .card
+    width: 49%
+    height: 255px
+  
+@media (max-width: 760px)
+  .hotel    
     &__block
       display: flex                        
       width: 100%      
-    &__map      
-      height: 210px
-    &-slider
-      &__button
-        transform: translateY(-30%)
-  .booking    
-    padding: 28px 22px
+    &__map
+      width: 100%      
+      margin-top: 20px
+  .user
+    &__name
+      display: none
+  .booking
+    width: 100%
+  .newsletter    
+    &-subscribe
+      width: 280px
   .reviews
-    &__title
-      font-size: 30px
-      line-height: 38px
     &-slider
       &__card
         padding: 54px 30px 30px
@@ -88,24 +138,6 @@
           transform: translate(50%, 0)
       &__text
         max-width: 455px
-  
-@media (max-width: 760px)
-  .hotel
-    padding-bottom: 60px
-    &__block      
-      margin-top: 20px
-    &__map
-      width: 100%
-      height: 210px
-      margin-top: 20px
-  .user
-    &__name
-      display: none
-  .booking
-    width: 100%
-  .newsletter    
-    &-subscribe
-      width: 280px  
 
 @media (max-width: 740px)  
   .navbar-menu
@@ -113,14 +145,12 @@
       font-weight: 400
       font-size: 10px
   .reviews
-    &__title
-      font-size: 18px 
-      line-height: 23px
+    padding-bottom: 50px    
     &-slider      
       &__card
-        max-width: 580px      
+        max-width: 580px
       &__text
-        max-height: 266px
+        width: 100%      
 
 @media (max-width: 640px)
   .container
@@ -183,13 +213,16 @@
       margin-bottom: 5px
     &__strong
       font-size: 30px
-      line-height: 38px    
+      line-height: 38px
+  .activities
+    &__card
+      padding-right: 19px    
 
 @media (max-width: 480px)
   .container
     max-width: 280px
   .hotel
-    padding: 5px 0 20px 0
+    padding: 5px 0 40px 0
     &-stars
       margin-left: 145px
       margin-right: auto
@@ -206,7 +239,29 @@
           left: 5px
         &_next
           right: 5px
+    &__block
+      margin-top: 25px
+    &__map
+      max-height: 172px
+  .newsletter
+    padding-top: 76px
+    padding-bottom: 83px
+    &-wrapper
+      width: 88%
+    &__subscribe
+      font-size: 20px
+      line-height: 25px
+    &__strong
+      font-size: 30px
+      line-height: 38px
+    &-subscribe
+      &__input
+        padding-left: 20px
   .reviews
+    &__title
+      font-size: 18px
+      line-height: 23px
+      margin-bottom: 42px
     &-slider
       &__button
         &_prev
@@ -217,4 +272,15 @@
           right: 40%
           margin-right: -65px
           transform: translate(50%, 0)
-  
+      &__text
+        max-height: 266px
+  .card
+    width: 100%
+  .activities
+    padding-top: 48px
+    &__title
+      margin-bottom: 36px
+      font-size: 18px
+      line-height: 23px
+    &__card
+      padding-right: 50px
