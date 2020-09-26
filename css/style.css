@@ -1038,6 +1038,8 @@ img {
 .packages__img_active {
   width: 52%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .packages-stars {
@@ -1618,6 +1620,9 @@ img {
     -ms-grid-rows: 600px 600px;
         grid-template-rows: 600px 600px;
   }
+  .packages__info_active {
+    padding: 30px 21px 25px 32px;
+  }
   .packages__text {
     margin-bottom: 40px;
     font-size: 12px;
@@ -1717,6 +1722,13 @@ img {
   .packages__card_active {
     -ms-grid-column: span 1;
         grid-column-start: span 1;
+  }
+  .packages__text {
+    font-size: 10px;
+    margin-bottom: 20px;
+  }
+  .packages__details_active {
+    margin-bottom: 20px;
   }
   .packages__button {
     right: 21px;
@@ -1977,6 +1989,32 @@ img {
     margin-bottom: 36px;
     font-size: 18px;
     line-height: 23px;
+  }
+  .packages__info_active {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    left: 0;
+    height: 50%;
+    padding: 30px 21px 25px 32px;
+    color: #ffffff;
+    background-color: #0A223D;
+  }
+  .packages__img_active {
+    width: 100%;
+    height: 52%;
+  }
+  .packages__text {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
