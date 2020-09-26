@@ -45,6 +45,20 @@
   .card
     width: 340px
     height: 230px
+  .packages
+    &__hotelname
+      margin-bottom: 20px
+    &-wrapper
+      grid-template-rows: 600px 600px            
+    &__text
+      margin-bottom: 40px
+      font-size: 12px
+    &__details
+      &_active
+        margin-bottom: 40px
+    &__button
+      right: auto
+
 
 @media (max-width: 768px)    
   .navbar
@@ -98,6 +112,16 @@
   .card
     width: 49%
     height: 255px
+  .packages
+    &-wrapper
+      grid-template-rows: repeat(5, 500px)
+      grid-template-columns: 100%
+    &__card
+      &_active
+        grid-column-start: span 1
+    &__button      
+      right: 21px
+
   
 @media (max-width: 760px)
   .hotel    
