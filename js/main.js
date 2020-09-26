@@ -14,6 +14,7 @@ var hotelSlider = new Swiper(".hotel-slider", {
 var reviewsSlider = new Swiper(".reviews-slider", {
   // Optional parameters
   loop: true,
+  autoHeight: true,
   keyboard: {
     enabled: true,
     onlyInViewport: false,

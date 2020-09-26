@@ -1153,15 +1153,11 @@ img {
 
 .reviews-slider__text {
   width: 540px;
-  max-height: 115px;
   margin: auto;
   text-align: justify;
   font-weight: normal;
   font-size: 12px;
   line-height: 160%;
-  overflow: hidden;
-  -o-text-overflow: ellipsis;
-     text-overflow: ellipsis;
 }
 
 .reviews-slider__button {
@@ -1453,14 +1449,8 @@ img {
         -ms-transform: translate(50%, 0);
             transform: translate(50%, 0);
   }
-  .reviews-slider__text {
-    max-height: 133px;
-  }
   .activities {
     padding: 54px 0 60px 0;
-  }
-  .activities__card {
-    padding-right: 110px;
   }
   .card {
     width: 49%;
@@ -1640,9 +1630,6 @@ img {
     font-size: 30px;
     line-height: 38px;
   }
-  .activities__card {
-    padding-right: 19px;
-  }
 }
 
 @media (max-width: 480px) {
@@ -1715,9 +1702,6 @@ img {
         -ms-transform: translate(50%, 0);
             transform: translate(50%, 0);
   }
-  .reviews-slider__text {
-    max-height: 266px;
-  }
   .card {
     width: 100%;
   }
@@ -1728,9 +1712,6 @@ img {
     margin-bottom: 36px;
     font-size: 18px;
     line-height: 23px;
-  }
-  .activities__card {
-    padding-right: 50px;
   }
 }
 /*# sourceMappingURL=style.css.map */
