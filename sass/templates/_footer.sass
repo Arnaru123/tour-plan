@@ -1,0 +1,169 @@
+.footer
+  background-color: $dark
+  color: $light
+  padding: 108px 0 46px 0
+  &-wrapper
+    display: grid    
+    grid-template-columns: 287px 281px 349px 190px    
+    grid-template-rows: 190px min-content 76px min-content 114px
+  &__logo
+    grid-row: 1 / 3    
+    width: 154px
+    height: 235px    
+    align-self: center
+  &__categories
+    grid-row: 1 / 4
+  &__legal
+    // margin-left: auto
+  &__social
+    &-network
+      grid-row: 2 / 4
+      grid-column: span 2
+      display: flex
+      align-items: flex-start
+      justify-content: space-between
+      width: 293px
+    &-links
+      display: flex
+      flex-wrap: wrap
+      align-items: center
+    &-link
+      &:not(:first-child)        
+        margin-left: 10px
+    &-icon
+      width: 20px
+      height: 20px      
+  &__contact
+    &-details
+      grid-column: span 2
+    &-icon
+      width: 20px
+      height: 20px
+      margin-right: 22px
+      &-phone
+        width: 20px
+        height: 20px        
+        margin-right: 22px        
+    &-form
+      grid-column: span 2
+  &__form
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
+  &__input,
+  &__message  
+    &::placeholder
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      color: $placeholder-light      
+  &__title
+    margin: 0 0 16px 0    
+    font-style: normal
+    font-weight: bold
+    font-size: 18px
+    line-height: 23px
+    color: $light
+    text-transform: uppercase
+    &_mb-1
+      margin-top: 10px
+      margin-bottom: 26px
+    &_mb-2
+      margin-bottom: 34px
+  &__ul    
+    margin: 0
+    padding: 0
+    list-style: none    
+  &__item
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 160%
+    color: $placeholder-light
+    &-phone
+      display: flex
+      align-items: flex-start
+      justify-content: flex-start            
+    &-link
+      display: block      
+      text-decoration: none
+      color: inherit
+  &__link    
+    text-decoration: none
+    color: inherit
+  &__text
+    margin: 0
+    margin-bottom: 22px
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 160%
+    color: $placeholder-light
+  &__details
+    &-ul
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+      min-height: 180px
+      margin: 0
+      padding: 0
+  &__input
+    background-color: $light
+    border-radius: 4px
+    border: none
+    padding: 0 23px
+    height: 50px
+    margin-bottom: 15px
+    flex-basis: 48%
+  &__message
+    padding: 18px 23px
+    background-color: $light
+    border-radius: 4px
+    border: none
+    flex-basis: 100%
+    margin-bottom: 23px
+  &__button
+    min-width: 160px
+    min-height: 50px
+    padding: 18px
+    border-radius: 4px
+    border: none
+    cursor: pointer
+    font-style: normal
+    font-weight: bold
+    font-size: 12px
+    line-height: 15px
+    color: $light
+    background-color: $primary
+  &__info
+    font-style: normal
+    font-weight: bold
+    font-size: 12px
+    line-height: 15px
+    color: #E0E0E0
+  &__bottom         
+    display: grid
+    grid-template: 1fr / 414px 560px 136px
+    align-self: end    
+  &__policy
+    width: 300px
+    grid-column: 2 / 3
+    &-link
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      color: inherit
+      text-decoration: none
+      &:not(:last-child)
+        margin-right: 10px        
+  &__store
+    height: 22px
+    width: 136px
+    grid-column-end: 4
+
+    
+
+
