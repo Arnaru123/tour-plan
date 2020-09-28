@@ -2,10 +2,13 @@
   background-color: $dark
   color: $light
   padding: 108px 0 46px 0
-  &-wrapper
+  &-wrapper    
     display: grid    
-    grid-template-columns: 287px 281px 349px 190px    
-    grid-template-rows: 190px min-content 76px min-content 114px
+    // grid-template-columns: 287px 281px 349px 190px 
+    grid-template-columns: repeat(4, minmax(250px, 1fr))   
+    // grid-template-rows: 176px min-content minmax(40px, max-content) min-content 97px
+    grid-auto-rows: minmax(40px, min-content)
+    grid-gap: 20px
   &__logo
     grid-row: 1 / 3    
     width: 154px
@@ -14,7 +17,7 @@
   &__categories
     grid-row: 1 / 4
   &__legal
-    // margin-left: auto
+    margin-left: auto
   &__social
     &-network
       grid-row: 2 / 4
@@ -143,13 +146,19 @@
     font-size: 12px
     line-height: 15px
     color: #E0E0E0
-  &__bottom         
+  &__bottom
+    grid-column: 1 / 5
     display: grid
-    grid-template: 1fr / 414px 560px 136px
-    align-self: end    
+    // grid-template: 1fr / 414px 560px 136px
+    // align-self: end
+    grid-template: min-content / repeat(2, 1fr)
+    align-self: end
+    justify-self: end
+    padding-top: 72px    
   &__policy
-    width: 300px
-    grid-column: 2 / 3
+    // width: 300px
+    grid-column: 1
+    justify-self: center
     &-link
       font-style: normal
       font-weight: normal
@@ -162,7 +171,9 @@
   &__store
     height: 22px
     width: 136px
-    grid-column-end: 4
+    grid-column: 4 / 5
+    justify-self: end
+    // grid-column-end: 4
 
     
 
