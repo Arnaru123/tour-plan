@@ -10,8 +10,7 @@
     width: 230px
     height: 230px
   .footer
-    &-wrapper
-      // grid-template-columns: 275px 220px 270px 190px
+    &-wrapper      
       grid-template-columns: repeat(6, 1fr)
       grid-row-gap: 40px      
     &__logo
@@ -30,8 +29,7 @@
       grid-column: span 2
     &__legal
       grid-row: 2 / 3
-      grid-column: span 2
-    //   justify-self: end
+      grid-column: span 2    
     &__contact
       &-details
         grid-row: 3
@@ -41,10 +39,6 @@
         grid-column: span 5
     &__input
       flex-basis: 100%    
-    // &__bottom
-    //   grid-row: 5
-    //   grid-column-start: 1
-    //   grid-template-columns: 410px 410px 136px
 
 @media (max-width: 992px)
   .container,
@@ -107,7 +101,7 @@
       grid-column: 1 / 4
 
 @media (max-width: 768px)    
-  .navbar
+  .navbar    
     &-top      
       padding: 30px 0
       &__logo
@@ -183,8 +177,7 @@
       max-height: 110px
     &__social
       &-network
-        grid-column: 4 / 9
-      
+        grid-column: 4 / 9      
     &__categories
       grid-column: 1 / 4
     &__additional
@@ -208,16 +201,57 @@
       grid-template: repeat(2, 1fr)
       justify-self: start
       padding-top: 0
-    &__policy
-      // grid-column-start: 4
-      // grid-column-end: 1
-      
+    &__policy      
       justify-self: start
     &__store
       grid-column: 4 / 5
-
       
 @media (max-width: 760px)
+  body
+    padding-top: 78px
+  .container
+    max-width: 500px
+    width: 92%    
+  .navbar
+    &-mobile
+      &_fixed
+        position: fixed
+        left: 0
+        top: 0
+        right: 0
+        z-index: 20   
+    &-top
+      padding: 28px 0      
+      &__logo
+        width: 99px
+    &__search, &__user
+      &-mobile
+        &_hidden
+          display: none
+        &_visible
+          display: flex
+          flex-direction: column
+          margin-left: 0
+    &-bottom
+      display: none
+      position: fixed
+      left: 0
+      right: 0
+      bottom: 0
+      top: 78px
+      padding-top: 30px
+      &_visible
+        display: block        
+    &-menu      
+      flex-direction: column
+      &__item
+        margin-bottom: 20px
+        font-weight: 400
+        font-size: 10px
+        &-mobile
+          &_visible
+            display: block
+            margin-bottom: 27px
   .hotel    
     &__block
       display: flex                        
@@ -232,10 +266,12 @@
     width: 100%
   .newsletter    
     &-subscribe
-      width: 280px
+      width: 280px 
   .reviews
+    padding-bottom: 50px
     &-slider
       &__card
+        max-width: 580px
         padding: 54px 30px 30px
         &:before,
         &:after
@@ -252,6 +288,7 @@
           transform: translate(50%, 0)
       &__text
         max-width: 455px
+        width: 100%
   .footer
     &-wrapper
       grid-template-columns: 1fr
@@ -287,10 +324,7 @@
       &-icon
         &-phone
           margin-left: 0
-          margin-right: 10px
-    &__item
-      &-phone
-                
+          margin-right: 10px                
     &__input
       flex-basis: 100%
     &__bottom
@@ -305,34 +339,111 @@
       grid-row: 9
       grid-column: 1
       justify-self: start
-    
-      
-
-
-@media (max-width: 740px)  
-  .navbar-menu
-    &__link
-      font-weight: 400
-      font-size: 10px
-  .reviews
-    padding-bottom: 50px    
-    &-slider      
-      &__card
-        max-width: 580px
+  .menu
+    &-button
+      display: flex
+      width: 16px      
+      align-items: center
+      justify-content: space-between
+      flex-direction: column
+      border: none
+      outline: none
+      cursor: pointer
+      background-color: $light
+      &__line
+        width: 16px
+        height: 1px
+        background-color: $text-color
+        &:not(:last-child)
+          margin-bottom: 4px
+  .user
+    &__name
+      &_light
+        display: block
+        margin-left: 0
+        margin-top: 10px
+        text-transform: capitalize
+        color: $light          
+  .stars
+    flex-basis: auto
+  .hotel
+    padding-bottom: 40px
+    &-slider
+      height: 350px
+    &-name
+      flex-basis: 100%
+    &-wrapper
+      justify-content: space-between
+    &-info
       &__text
-        width: 100%      
+        width: 100%
+      &__name
+        margin: 10px 0 0 0
+      &__rating
+        display: none
+      &__offer
+        margin-left: 0
+        order: -1
+      &__description
+        padding-bottom: 38px  
+  .newsletter    
+    &-wrapper
+      height: 160px
+      flex-direction: column
+      align-items: flex-start
+    &-title         
+    &__subscribe
+      font-size: 20px
+      line-height: 25px
+      margin-bottom: 5px
+    &__strong
+      font-size: 30px
+      line-height: 38px
 
 @media (max-width: 640px)
+  body
+    padding-top: 78px
   .container
     max-width: 500px
     width: 92%
-  .navbar   
+  .navbar
+    &-mobile
+      &_fixed
+        position: fixed
+        left: 0
+        top: 0
+        right: 0
+        z-index: 20   
     &-top
       padding: 28px 0      
       &__logo
         width: 99px
-    &-bottom, &__search, &__user
+    &__search, &__user
+      &-mobile
+        &_hidden
+          display: none
+        &_visible
+          display: flex
+          flex-direction: column
+          margin-left: 0
+    &-bottom
       display: none
+      position: fixed
+      left: 0
+      right: 0
+      bottom: 0
+      top: 78px
+      padding-top: 30px
+      &_visible
+        display: block        
+    &-menu      
+      flex-direction: column
+      &__item
+        margin-bottom: 20px
+        &-mobile
+          &_visible
+            display: block
+            margin-bottom: 27px
   .menu
     &-button
       display: flex
@@ -348,7 +459,15 @@
         height: 1px
         background-color: $text-color
         &:not(:last-child)
-          margin-bottom: 4px          
+          margin-bottom: 4px
+  .user
+    &__name
+      &_light
+        display: block
+        margin-left: 0
+        margin-top: 10px
+        text-transform: capitalize
+        color: $light          
   .stars
     flex-basis: auto
   .hotel
@@ -388,6 +507,12 @@
 @media (max-width: 480px)
   .container
     max-width: 280px
+  .navbar
+    &-bottom
+      padding-top: 12px
+  .search
+    &__input
+      min-width: 243px
   .hotel
     padding: 5px 0 40px 0
     &-stars
