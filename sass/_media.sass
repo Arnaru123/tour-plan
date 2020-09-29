@@ -238,12 +238,12 @@
       left: 0
       right: 0
       bottom: 0
-      top: 78px
+      top: 76px
       padding-top: 30px
       &_visible
         display: block        
     &-menu      
-      flex-direction: column
+      flex-direction: column      
       &__item
         margin-bottom: 20px
         font-weight: 400
@@ -252,6 +252,10 @@
           &_visible
             display: block
             margin-bottom: 27px
+            width: 100%
+  .search
+    &__input
+      width: 100%
   .hotel    
     &__block
       display: flex                        
@@ -510,6 +514,12 @@
   .navbar
     &-bottom
       padding-top: 12px
+    &-menu
+      &__item
+        &-mobile
+          &_visible
+            width: 88%
+            margin-bottom: 33px
   .search
     &__input
       min-width: 243px

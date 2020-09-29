@@ -420,6 +420,7 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between;
   text-transform: uppercase;
+  padding-left: 0;
 }
 
 .navbar-menu__item {
@@ -2276,7 +2277,7 @@ img {
     left: 0;
     right: 0;
     bottom: 0;
-    top: 78px;
+    top: 76px;
     padding-top: 30px;
   }
   .navbar-bottom_visible {
@@ -2297,6 +2298,10 @@ img {
   .navbar-menu__item-mobile_visible {
     display: block;
     margin-bottom: 27px;
+    width: 100%;
+  }
+  .search__input {
+    width: 100%;
   }
   .hotel__block {
     display: -webkit-box;
@@ -2710,6 +2715,10 @@ img {
   }
   .navbar-bottom {
     padding-top: 12px;
+  }
+  .navbar-menu__item-mobile_visible {
+    width: 88%;
+    margin-bottom: 33px;
   }
   .search__input {
     min-width: 243px;
