@@ -2098,13 +2098,15 @@ img {
     margin-left: 47px;
   }
   .navbar-bottom {
-    padding: 22px 0;
+    padding: 4px 0;
   }
   .navbar-menu {
+    width: 686px;
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    padding-left: 15px;
   }
   .navbar-menu__link {
     font-size: 12px;
