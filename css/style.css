@@ -2290,6 +2290,9 @@ img {
   .navbar-bottom_visible {
     display: block;
   }
+  .navbar__bottom-mobile_visible {
+    overflow-y: auto;
+  }
   .navbar-menu {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
