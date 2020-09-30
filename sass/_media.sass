@@ -95,11 +95,13 @@
     &__input
       flex-basis: 49%
     &__bottom    
-      grid-column: 2 / 6
-      // grid-template-columns: repeat(4, 1fr)
-      grid-template-columns: repeat(3, 1fr)
+      grid-column: 1 / 6
+      grid-template-columns: repeat(4, 1fr)
+      justify-self: unset
+      // grid-template-columns: repeat(3, 1fr)
     &__policy
       grid-column: 1 / 4
+      justify-self: unset
 
 @media (max-width: 768px)    
   .navbar    
@@ -347,6 +349,7 @@
         margin-right: 0
       &-icon
         &-phone
+          flex-shrink: 0
           margin-left: 6px
           margin-right: 10px
     &__title
