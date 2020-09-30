@@ -38,7 +38,15 @@
         grid-row: 4
         grid-column: span 5
     &__input
-      flex-basis: 100%    
+      flex-basis: 100%
+    &__bottom
+      grid-column: 1 / 7      
+      justify-self: unset
+      padding-top: 0
+    &__policy      
+      justify-self: start
+    &__store
+      grid-column: 5 / 7    
 
 @media (max-width: 992px)
   .container,
@@ -113,7 +121,7 @@
     &-bottom
       padding: 22px 0    
     &-menu
-      justify-content: center
+      justify-content: space-between
       &__link        
         font-size: 12px
         line-height: 15px
