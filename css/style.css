@@ -402,7 +402,7 @@ img {
 }
 
 .navbar-bottom {
-  padding: 31px 0;
+  padding: 13px 0;
   background-color: #0A223D;
 }
 
@@ -2161,7 +2161,7 @@ img {
             transform: translate(50%, 0);
   }
   .activities {
-    padding: 54px 0 60px 0;
+    padding: 54px 0 48px 0;
   }
   .card {
     width: 49%;
@@ -2242,9 +2242,15 @@ img {
   .footer__contact-icon-phone {
     margin-left: 7px;
   }
+  .footer__details-ul {
+    min-height: 152px;
+  }
   .footer__title_mb-1 {
     margin-top: 16px;
     margin-bottom: 26px;
+  }
+  .footer__title_mb-2 {
+    margin-top: 10px;
   }
   .footer__input {
     -webkit-flex-basis: 47%;
