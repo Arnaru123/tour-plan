@@ -2101,7 +2101,7 @@ img {
     padding: 4px 0;
   }
   .navbar-menu {
-    width: 686px;
+    max-width: 686px;
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
