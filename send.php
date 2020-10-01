@@ -14,18 +14,18 @@ $subscribe = $_POST['subscribe'];
 // Формирование самого письма
 
 if(isset($subscribe)){
-    $title = "Подписка";
+    $title = "Subscribe";
     $body = "
-    <h2>Подписка на новости</h2>    
-    <b>Почта:</b> $subscribe
+    <h2>Newsletter subscribe</h2>    
+    <b>Email:</b> $subscribe
     ";    
 } else if (isset($message)){
-    $title = "Заявка Best Tour Plan";
+    $title = "New message Best Tour Plan";
     $body = "
-    <h2>Новое письмо</h2>
-    <b>Имя:</b> $name<br>
-    <b>Телефон:</b> $phone<br><br>
-    <b>Заявка:</b><br>$message
+    <h2>New message</h2>
+    <b>Name:</b> $name<br>
+    <b>Phone:</b> $phone<br><br>
+    <b>Message:</b><br>$message
     ";        
 }
 
