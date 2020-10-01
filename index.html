@@ -16,9 +16,11 @@
     <header class="navbar navbar-mobile_fixed">
       <div class="container">
         <div class="navbar-top">
-          <svg class="icon navbar-top__logo">
-            <use xlink:href="img/sprite.svg#logo"></use>
-          </svg>
+          <a href="#" class="navbar__logo-link"
+            ><svg class="icon navbar-top__logo">
+              <use xlink:href="img/sprite.svg#logo"></use>
+            </svg>
+          </a>
           <form
             action="#"
             class="search navbar__search navbar__search-mobile_hidden"
@@ -524,12 +526,17 @@
           <span class="newsletter__subscribe">subscribe to our</span>
           <strong class="newsletter__strong">Newsletter</strong>
         </h2>
-        <form action="send.php" method="POST" class="newsletter-subscribe">
+        <form
+          action="send.php"
+          method="POST"
+          class="newsletter-subscribe"
+          name="subscribe"
+        >
           <input
             type="text"
             class="newsletter-subscribe__input"
             placeholder="Your email address"
-            name="email"
+            name="subscribe"
           />
           <button class="button newsletter-subscribe__button">
             <span class="button__text">Send</span>
@@ -751,9 +758,11 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
-          <svg class="icon footer__logo">
-            <use xlink:href="img/sprite.svg#logo-vertical"></use>
-          </svg>
+          <a href="#" class="footer__logo">
+            <svg class="icon footer__logo">
+              <use xlink:href="img/sprite.svg#logo-vertical"></use>
+            </svg>
+          </a>
           <div class="footer__list footer__categories">
             <h3 class="footer__title">ALL CATEGORIES</h3>
             <ul class="footer__ul">
@@ -905,7 +914,12 @@
           <!-- /.footer__contact-details -->
           <div class="footer__contact-form">
             <h3 class="footer__title footer__title_mb-2">Send us a message</h3>
-            <form action="send.php" method="POST" class="footer__form">
+            <form
+              action="send.php"
+              method="POST"
+              class="footer__form"
+              name="footer"
+            >
               <input
                 type="text"
                 class="input footer__input"
