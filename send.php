@@ -8,7 +8,6 @@ require 'phpmailer/Exception.php';
 $name = $_POST['name'];
 $phone = $_POST['phone'];
 $message = $_POST['message'];
-$email = $_POST['email'];
 $subscribe = $_POST['subscribe'];
 $booking = $_POST['booking'];
 
@@ -21,7 +20,7 @@ if(isset($subscribe)){
     <h2>Newsletter subscribe</h2>    
     <b>Email:</b> $subscribe
     ";    
-} if(isset($booking)){
+} else if(isset($booking)){
     $title = "Booking Best Tour Plan";
     $body = "
     <h2>New message</h2>
