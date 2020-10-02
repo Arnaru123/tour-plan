@@ -108,10 +108,17 @@
       justify-self: unset      
     &__policy
       grid-column: 1 / 4
-      justify-self: unset
-  .modal
+      justify-self: unset        
+  .modal    
     &__dialog
       padding: 33px 50px
+      max-height: 90%
+      overflow-y: auto
+      &__button
+        width: 100%
+        margin-bottom: 10px
+      &__info
+        width: 100%
 
 @media (max-width: 768px)    
   .navbar    
@@ -234,15 +241,15 @@
       justify-self: start
     &__store
       grid-column: 5 / 7
-  .modal    
-    &__dialog
-      max-height: 90%      
-      overflow-y: auto
-    &__button
-      width: 100%
-      margin-bottom: 10px
-    &__info
-      width: 100%    
+  // .modal    
+  //   &__dialog
+  //     max-height: 90%      
+  //     overflow-y: auto
+  //   &__button
+  //     width: 100%
+  //     margin-bottom: 10px
+  //   &__info
+  //     width: 100%    
 
       
 @media (max-width: 760px)
