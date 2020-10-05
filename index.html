@@ -545,7 +545,7 @@
           name="subscribe"
         >
           <input
-            type="text"
+            type="email"
             class="newsletter-subscribe__input"
             placeholder="Your email address"
             name="subscribe"
@@ -929,21 +929,29 @@
             <form
               action="send.php"
               method="POST"
-              class="footer__form"
-              name="footer"
+              class="footer__form valid-form"
+              name="message"
             >
-              <input
-                type="text"
-                class="input footer__input"
-                placeholder="Your Full Name*"
-                name="name"
-              />
-              <input
-                type="text"
-                class="input footer__input"
-                placeholder="Phone Number*"
-                name="phone"
-              />
+              <div class="footer__input-group">
+                <input
+                  type="text"
+                  class="input footer__input"
+                  placeholder="Your Full Name*"
+                  name="name"
+                  required
+                />
+              </div>
+              <!-- /.footer__input-group -->
+              <div class="footer__input-group">
+                <input
+                  type="tel"
+                  class="input footer__input"
+                  placeholder="Phone Number*"
+                  name="phone"
+                  required
+                />
+              </div>
+              <!-- /.footer__input-group -->
               <textarea
                 class="message footer__message"
                 placeholder="Message"
@@ -985,7 +993,7 @@
         <form
           action="send.php"
           method="POST"
-          class="modal__form"
+          class="modal__form valid-form"
           name="booking"
         >
           <input
@@ -993,18 +1001,22 @@
             class="input modal__input"
             placeholder="Your Full Name*"
             name="name"
+            minlength="2"
+            required
           />
           <input
-            type="text"
+            type="tel"
             class="input modal__input"
             placeholder="Phone Number*"
             name="phone"
+            required
           />
           <input
-            type="text"
+            type="email"
             class="input modal__input"
             placeholder="Email*"
             name="booking"
+            required
           />
           <textarea
             class="message modal__message"
@@ -1020,6 +1032,7 @@
     <!-- /.modal -->
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

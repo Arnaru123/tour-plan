@@ -53,4 +53,23 @@ $(document).ready(function () {
     modalOverlay.removeClass("modal__overlay_visible");
     modalDialog.removeClass("modal__dialog_visible");
   }
+  // Обработка форм
+  $(".valid-form").each(function () {
+    $(this).validate({
+      errorClass: "error",
+      messages: {
+        name: {
+          required: "Please specify your name",
+          minlength: "Your name must have more than 2 symbol",
+        },
+        email: {
+          required: "We need your email address to contact you",
+          email: "Your email address must be in the format of name@domain.com",
+        },
+        phone: {
+          required: "Please specify your phone",
+        },
+      },
+    });
+  });
 });

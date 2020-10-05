@@ -8,8 +8,10 @@ require 'phpmailer/Exception.php';
 $name = $_POST['name'];
 $phone = $_POST['phone'];
 $message = $_POST['message'];
+$email = $_POST['email'];
 $subscribe = $_POST['subscribe'];
 $booking = $_POST['booking'];
+$footer = $_POST['footer'];
 
 
 // Формирование самого письма
@@ -29,14 +31,14 @@ if(isset($subscribe)){
     <b>Email:</b> $booking<br><br>
     <b>Message:</b><br>$message
     ";
-} else if (isset($message)){
+} else if(isset($message)){
     $title = "New message Best Tour Plan";
     $body = "
     <h2>New message</h2>
     <b>Name:</b> $name<br>
-    <b>Phone:</b> $phone<br><br>
+    <b>Phone:</b> $phone<br><br>    
     <b>Message:</b><br>$message
-    ";        
+    ";    
 }
 
 
