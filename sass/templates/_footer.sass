@@ -5,29 +5,28 @@
   &-wrapper
     display: grid
     grid-template-columns: repeat(4, minmax(250px, 1fr))
-    grid-auto-rows: minmax(40px, min-content)
+    grid-auto-rows: 190px repeat(4, min-content)
     grid-gap: 20px
   &__logo
     width: 154px
     height: 235px
     &-link
-      grid-row: 1 / 2
+      grid-row: 1 / 3
       align-self: center
-
   &__categories
-    grid-row: 1 / 4
-
+    grid-row: 1 / 3
+  &__additional
+    grid-row: 1 / 2
   &__legal
     margin-left: auto
   &__social
     &-network
-      grid-row: 2 / 4
+      grid-row: 2 / 3
       grid-column: span 2
       display: flex
       align-items: flex-start
       justify-content: space-between
-      width: 293px
-
+      max-width: 293px
     &-links
       display: flex
       flex-wrap: wrap
@@ -41,7 +40,6 @@
   &__contact
     &-details
       grid-column: span 2
-
     &-icon
       width: 20px
       height: 20px
@@ -52,7 +50,6 @@
         margin-right: 22px
     &-form
       grid-column: span 2
-
   &__form
     display: flex
     align-items: center
@@ -75,9 +72,10 @@
     color: $light
     text-transform: uppercase
     &_mb-1
-      margin-top: 10px
+      margin-top: 67px
       margin-bottom: 26px
     &_mb-2
+      margin-top: 55px
       margin-bottom: 34px
   &__ul
     margin: 0
@@ -114,7 +112,7 @@
       flex-direction: column
       flex-wrap: wrap
       justify-content: space-between
-      min-height: 163px
+      min-height: 154px
       margin: 0
       padding: 0
   &__input

@@ -245,7 +245,6 @@
       max-width: 97px
       max-height: 108px
       &-link
-
         grid-column: unset
     &__social
       &-network
@@ -420,7 +419,7 @@
       margin-left: 0
     &__contact
       &-details
-        max-width: 90%
+        // max-width: 90%
         grid-row: 6
         grid-column: 1
       &-form
@@ -531,6 +530,8 @@
   .modal
     &__dialog
       padding: 25px 50px
+    &__info
+      margin-top: 10px
 
 @media (max-width: 640px)
   body
@@ -732,11 +733,18 @@
   .footer
     &-wrapper
       grid-template-columns: 100%
+    &__social-network
+      margin-top: 10px
+    &__details-ul
+      height: 225px
     &__contact
       &-details
         max-width: 100%
       &-form
         max-width: 100%
+    &__title
+      &_mb-2
+        margin-top: 25px
   .modal
     &__dialog
       width: 90%
