@@ -85,12 +85,23 @@
     font-size: 18px
     line-height: 23px
   &__text
+    max-height: 210px
     margin: 0
     margin-bottom: 46px
     font-style: normal
     font-weight: normal
     font-size: 14px
     line-height: 160.6%
+    overflow-y: auto
+    &::-webkit-scrollbar
+      width: 5px
+      background: rgb(12, 0, 124)
+    &.::-webkit-scrollbar-thumb
+      border-radius: 10px
+      background-color: rgb(9, 2, 65)
+    &::-webkit-scrollbar-track
+      border-radius: 10px
+      background-color: rgb(26, 8, 187)
   &__details
     margin-bottom: 24px
     &_active
