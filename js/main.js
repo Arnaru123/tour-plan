@@ -28,8 +28,7 @@ $(document).ready(function () {
   });
 
   var menuButton = document.querySelector(".menu-button");
-  menuButton.addEventListener("click", function () {
-    console.log("Клик по кнопке меню");
+  menuButton.addEventListener("click", function () {    
     document
       .querySelector(".navbar-bottom")
       .classList.toggle("navbar-bottom_visible");
@@ -85,4 +84,8 @@ $(document).ready(function () {
       );
     }
   });
+
+  $(function(){  
+    $("#phone").mask("+7(999) 999-99-99");
+});
 });
